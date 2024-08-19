@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 id="question">In web design, what does CSS stand for?</h1>
+        <button onclick="checkAnswer(this, 'wrong')">A. Corresponding Style Sheet</button>
+        <button onclick="checkAnswer(this, 'wrong')">B. Counter Strike Source</button>
+        <button onclick="checkAnswer(this, 'wrong')">C. Correct Strick Source</button>
+        <button onclick="checkAnswer(this, 'correct')">D. Cascading Style Sheet</button>
+        <div class="navigation">
+            <button onclick="prevQuestion()" id="prevBtn" style="display: none;">Previous</button>
+            <button onclick="nextQuestion()" id="nextBtn">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
